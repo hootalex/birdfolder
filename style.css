@@ -1,0 +1,358 @@
+:root {
+  --blue: #0c6bf3;
+  --navy: rgb(0 75 156);
+  --baby: #ffffff;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 2em;
+  background-color: white;
+    padding: 40px;
+  max-width: 700px;
+  margin: auto;
+      background: url(https://cdn.glitch.com/d9102a9c-4c65-4819-ada2-01e5dba308b1%2Fimg-noise-361x370.png?v=1612646781625);
+  background-color: var(--baby);
+  margin-bottom: 100px;
+}
+
+.ospane a {
+  color: inherit
+}
+
+@font-face {
+  font-family: "Whirlybats";
+  font-style:normal;
+  font-weight:400;
+  src: url("https://cdn.glitch.com/230aa42e-94e6-443c-96f9-1f7a1c45087b%2FWhirlybatsGX.ttf?v=1598059065091")
+    format("truetype"); 
+}
+
+.window-icon {
+  font-family: 'Whirlybats';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  animation: animate 1s ease infinite;
+}
+
+summary {
+  list-style: none;
+    outline:none;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+display: none;
+}
+
+.ospane i {
+  width: 20px;
+  color: #1372f6;
+  text-align: center;
+  font-size: 18px;
+  transform: translateY(2px);
+}
+
+.toolbar {
+font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.toolbar p {
+  font-size: 15px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.slide {
+    height: 31px;
+  overflow: hidden;
+  transform: translateY(3px);
+}
+
+.toolbar {
+}
+
+.toolbar p, .toolbar i {
+  margin: 10px;
+}
+
+.slide p {
+  animation: slidein 10s infinite;
+}
+
+@keyframes slidein {
+  0%   { transform: translateY(0%);}
+    40% {transform: translateY(0%); }
+      48% {transform: translateY(-156%); }
+  50% {  transform: translateY(-156%); }
+  95% {  transform: translateY(-156%); }
+  100%   {transform: translateY(0%); }
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h1 img {
+  width: 53px;
+    transform: translate(-11px, 13px);
+  margin-right: -10px;
+}
+
+.icn {
+  transition: .1s;
+}
+
+.icn:hover {
+  transform: scale(1.7);
+}
+
+.download {
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transform: translate(0px, 35px);
+    box-shadow: 0px 2px 0px 0px var(--navy);
+    height: 20px;
+}
+
+.main {
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.infocontainer {
+  margin-top: 50px;
+  padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #e2ddcf4f;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.infocontainer h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.infocontainer {
+  line-height: 1.7;
+}
+
+li img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.folders {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  margin-right: 20px!important;
+}
+
+@keyframes translate {
+  0%   { transform: translateX(0%) }
+    40% {transform: translateX(0%) }
+  50% {  transform: translateX(-webkit-calc(-100% - 10px)) }
+  90% {  transform: translateX(-webkit-calc(-100% - 10px)) }
+  100%   { transform: translateX(0%) }
+}
+
+@keyframes appear {
+  0%   { transform: translate(-12px, 4px) scale(0); }
+    40% {transform: translate(-12px, 4px) scale(0); }
+      48% {transform: translate(-12px, 4px) scale(1.2); }
+  50% {  transform: translate(-12px, 4px) scale(1); }
+  95% {  transform: translate(-12px, 4px) scale(1); }
+  100%   {transform: translate(-12px, 4px) scale(0); }
+}
+
+
+
+
+
+.findermain {
+  width: 100%;
+}
+
+.foldercontainer {
+  padding: 5px;
+  display: flex;
+  animation: translate 10s infinite;
+}
+
+.folders {
+  list-style-type: none;
+margin: 0;
+    padding: 0;
+}
+
+.folders li {
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.folders li:hover {
+background-color: #0c6bf31a!important;
+}
+
+.folders li:nth-child(odd) {
+background-color: #f4f5f5;
+}
+
+.oswindow {
+max-width: 700px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  color: #4e4d4d;
+  box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.3);
+margin: auto;
+              user-select: none; 
+
+
+}
+
+.toolbaricons {
+  display: inline;
+}
+
+.light {
+  width: 13px;
+  height: 13px;
+  background-color: #fc605c;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 4px;
+box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+}
+
+.light:hover {
+  filter: brightness(90%);
+}
+
+a:hover {
+    filter: brightness(110%);
+
+}
+
+.bfico {
+  display: inline;
+    width: 27px;
+    transform: translate(-12px, 4px) scale(0);
+  animation: appear 10s infinite;
+}
+
+.ospane {
+  width: 35%;
+  min-width: 150px;
+  background-color: #e7e5e5;
+  padding: 15px;
+  font-size: 14px;
+  z-index: 2;
+  border-top-left-radius: 9px;
+border-bottom-left-radius: 9px;
+}
+
+.ospane p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #acaaaa;
+}
+
+.ospane ul, .ospane li {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ospane li {
+  padding: 5px;
+    border-radius: 9px;
+    padding-bottom: 10px;
+}
+
+.ospane li:hover {
+  background-color: #d8d8d8;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  
+.ospane ul, .ospane li, .ospane p {
+display: none;
+}
+  
+    body {
+    padding: 25px;
+  }
+  
+  .ospane {
+    background-color: transparent;
+    position: absolute;
+  }
+  
+  .toolbar p {
+    color: transparent;
+  }
+  
+  .dots {
+    display: none;
+  }
+  
+  .download {
+    display: none;
+  }
+  
+  .infocontainer {
+    padding: 25px;
+  }
+}
