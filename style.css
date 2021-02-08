@@ -38,6 +38,13 @@ font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "
   100% { font-variation-settings: "anim" 200; }
 }
 
+@keyframes bounce {
+  0%   { transform: translateY(0px) }
+  80%   { transform: translateY(0px) }
+  90%   { transform: translateY(-5px) }
+  100%   { transform: translateY(0px) }
+}
+
 h2 .window-icon {
 /*   color: var(--blue); */
   animation: ani 1s infinite;
@@ -93,6 +100,58 @@ font-size: 20px;
 
 .toolbar p {
   font-size: 15px;
+}
+
+.message {
+  display: inline-block;
+  position: relative;
+	background: var(--blue);
+	border-radius: 15px;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 300px;
+  box-shadow: inset 0px 3px 0px -2px rgba(0,0,0,0.23);
+  animation: bounce 5s;
+  animation-iteration-count: 3;
+}
+
+.left:after {
+content: '';
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: var(--blue);
+	border-bottom: 0;
+	margin-left: -5px;
+	margin-bottom: -5px;
+}
+
+
+.right:after {
+content: '';
+	position: absolute;
+	bottom: 0;
+	left: 80%;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: var(--blue);
+	border-bottom: 0;
+	margin-left: -5px;
+	margin-bottom: -5px;
+}
+
+.right {
+margin-left: 50%;
+}
+
+.message a {
+  color: white;
+  font-size: 10px;
 }
 
 h2 {
@@ -343,6 +402,13 @@ border-bottom-left-radius: 9px;
 
 
 @media screen and (max-width: 600px) {
+  
+  .message {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
 
   
 .ospane ul, .ospane li, .ospane p {
