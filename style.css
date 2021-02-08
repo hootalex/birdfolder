@@ -117,6 +117,15 @@ h2 {
   100%   {transform: translateY(0%); }
 }
 
+@keyframes glow {
+  0%   { box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.3);}
+  40% {box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.3); }
+  48% {box-shadow:0px 5px 18px 0px rgb(12 107 243 / 49%) }
+  50% {  box-shadow: 0px 5px 18px 0px rgb(12 107 243 / 49%)}
+  95% {  box-shadow: 0px 5px 18px 0px rgb(12 107 243 / 49%) }
+  100%   {box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.3); }
+}
+
 h1 {
   font-size: 32px;
   font-weight: 300;
@@ -254,9 +263,8 @@ max-width: 700px;
   color: #4e4d4d;
   box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.3);
 margin: auto;
-              user-select: none; 
-
-
+  user-select: none; 
+animation: glow 10s infinite;
 }
 
 .toolbaricons {
