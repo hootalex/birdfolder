@@ -12,13 +12,13 @@ a {
 body {
 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin: 2em;
-  background-color: white;
     padding: 40px;
   max-width: 700px;
   margin: auto;
       background: url(https://cdn.glitch.com/d9102a9c-4c65-4819-ada2-01e5dba308b1%2Fimg-noise-361x370.png?v=1612646781625);
   background-color: var(--baby);
   margin-bottom: 100px;
+  color: black;
 }
 
 .ospane a {
