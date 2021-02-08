@@ -199,8 +199,8 @@ list-style-type: none;
 @keyframes translate {
   0%   { transform: translateX(0%) }
     40% {transform: translateX(0%) }
-  50% {  transform: translateX(-webkit-calc(-100% - 10px)) }
-  90% {  transform: translateX(-webkit-calc(-100% - 10px)) }
+  50% {  transform: translateX(-webkit-calc(-100% - 10px)); transform: translateX(calc(-100% - 10px)) }
+  90% {  transform: translateX(-webkit-calc(-100% - 10px)); transform: translateX(calc(-100% - 10px)) }
   100%   { transform: translateX(0%) }
 }
 
